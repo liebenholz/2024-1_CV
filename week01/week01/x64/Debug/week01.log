@@ -1,0 +1,3 @@
+﻿  test.cpp
+D:\PROGRAMMING\KNU_Lecture\2024-1_CV\week01\week01\test.cpp(17,1): warning C4102: 'cv': 참조되지 않은 레이블입니다.
+  week01.vcxproj -> D:\PROGRAMMING\KNU_Lecture\2024-1_CV\week01\x64\Debug\week01.exe
