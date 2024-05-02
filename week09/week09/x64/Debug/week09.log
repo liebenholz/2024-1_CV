@@ -1,0 +1,3 @@
+﻿  p8-2.main.cpp
+D:\PROGRAMMING\KNU_Lecture\2024-1_CV\week09\week09\p8-2.main.cpp(8,13): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  week09.vcxproj -> D:\PROGRAMMING\KNU_Lecture\2024-1_CV\week09\x64\Debug\week09.exe
