@@ -173,10 +173,13 @@ int main()
 					// 실습 PPT 3페이지의 수식을 참고하여 구현하도록 한다.
 					// ** 지금부터 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
 
+					double distance = 0.0;
 
+					for (int k = 0; k < 8; ++k) {
+						distance += pow(descriptor_vectors_first[desc_i].descriptor[k] - descriptor_vectors_second[desc_j].descriptor[k], 2);
+					}
 
-
-
+					distance = sqrt(distance);
 
 					// ** 여기까지 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
 
@@ -189,8 +192,8 @@ int main()
 						// 현재 키포인트의 Octave의 제곱에 해당하는 Scale을 구한다.
 						// ** 지금부터 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
 						
-						
-						
+						int scale_first = pow(2, keypoints_first[key_i].octave);
+						int scale_second = pow(2, keypoints_second[key_j].octave);
 						
 						
 						// ** 여기까지 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
