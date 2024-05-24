@@ -47,10 +47,8 @@ EquationElement algorithms::LeastSquare::calculate_least_square()
 	for (auto& point : point_vector_list)
 	{
 		// ** 지금부터 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
-
-		sumX += 0;
-		sumY += 0;
-
+		sumX += point.x;
+		sumY += point.y;
 		// ** 여기까지 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
 	}
 
@@ -64,20 +62,16 @@ EquationElement algorithms::LeastSquare::calculate_least_square()
 	{
 		// Numerator와 Denominator는 각각 분자와 분모를 의미함
 		// ** 지금부터 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
-		
-		sumNumerator += 0;
-		sumDenominator += 0;
-
+		sumNumerator += (point.x - avgX) * (point.y - avgY);
+		sumDenominator += (point.x - avgX) * (point.x - avgX);
 		// ** 여기까지 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
 	}
 
 	EquationElement elem;
 	// Numerator(분자)와 Denominator(분모)를 구한 값으로 기울기와 절편을 구하세요.
 	// ** 지금부터 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
-
-	elem.m = 1;
-	elem.b = 1;
-
+	elem.m = sumNumerator / sumDenominator;
+	elem.b = avgY - elem.m * avgX;
 	// ** 여기까지 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
 
 	return elem;
@@ -119,10 +113,8 @@ void CRANSAC::convert_two_point_to_line()
 {
 	// Point pt1과 Point pt2를 이용해서 기울기와 절편을 계산하세요
 	// ** 지금부터 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
-
-	lineEquation.m = 0;
-	lineEquation.b = 0;
-
+	lineEquation.m = (pt2.y - pt1.y) / static_cast<double> (pt2.x - pt1.x);
+	lineEquation.b = pt2.y - lineEquation.m * pt2.x;
 	// ** 여기까지 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
 }
 
@@ -136,9 +128,7 @@ void CRANSAC::calculate_inlier()
 			// distance = |(-(x * m) - b + y) / root(m^2 + 1)|
 			// point_vector_list[i]를 이용해서 거리를 계산하세요
 			// ** 지금부터 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
-			
-			double distance = 0.0;
-			
+			double distance = std::abs(-(point_vector_list[i].x * lineEquation.m) - lineEquation.b + point_vector_list[i].y) / std::sqrt(lineEquation.m * lineEquation.m + 1);
 			// ** 여기까지 코드를 작성하세요. 이 줄은 지우시면 안 됩니다 **
 			if (distance <= 5)
 				liner.push_back(point_vector_list[i]);
