@@ -12,7 +12,7 @@ This lecture is **'Blended Learning'**; Video Lecture for theories, In-person Cl
 1. Homogeneous Coordinate Calculation
 2. Sobel Mask Direction Vector Calcualtion
 3. Moravec Algorithm Confidence Calculation
-4. Covariance Calcualtion of Test Score from Two Students
+4. Covariance Matrix of Test Score from Two Students
 5. Hand-writing Code: Dissolve of Two Image(week03)
 
 </details>
