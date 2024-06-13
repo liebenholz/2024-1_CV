@@ -22,10 +22,9 @@ This lecture is **'Blended Learning'**; Video Lecture for theories, In-person Cl
 <details>
     <summary>Week.09 ~ Week.12 : Closed-book Hand-writing (Includes Basis from Previous Lecture)</summary>
   
-1. 
-2. 
-3. 
-4. 
-5. Hand-writing Code: 
+1. Euclidean Distance Calculation of Two Vectors
+2. SIFT : Feature Descriptor Direction Vector Quantization, Weighted Vector, and Normalized Histogram
+3. PCA : Calculate Eigen Value and Vector of Two Images and Dimensionality Reduction
+4. Hand-writing Code: Harris Corner Confidence Map Calculation (p = Gdy2, q = Gdx2, r = Gdxy) 
 
 </details>
