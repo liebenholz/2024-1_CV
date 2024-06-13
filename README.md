@@ -7,7 +7,7 @@ This lecture is **'Blended Learning'**; Video Lecture for theories, In-person Cl
 
 ### Midterm Exam Information
   <details>
-    <summary>Week.02 ~ Week.07 : Hand-Writing (From Lecture and Assignments)</summary>
+    <summary>Week.02 ~ Week.07 : Closed-book Hand-writing (From Lecture and Assignments)</summary>
 
 1. Homogeneous Coordinate Calculation
 2. Sobel Mask Direction Vector Calcualtion
@@ -20,7 +20,7 @@ This lecture is **'Blended Learning'**; Video Lecture for theories, In-person Cl
 
 ### Final Exam Information
 <details>
-    <summary>Week.09 ~ Week.12 : Hand-Writing (Includes Basis from Previous Lecture)</summary>
+    <summary>Week.09 ~ Week.12 : Closed-book Hand-writing (Includes Basis from Previous Lecture)</summary>
   
 1. 
 2. 
